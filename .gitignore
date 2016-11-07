@@ -1,0 +1,7 @@
+# Build
+bower_components/
+build/
+node_modules/
+# IntelliJ
+.idea/
+*.iml
