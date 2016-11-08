@@ -51,10 +51,9 @@
                 attr-for-selected="name"
                 fallback-selection="view404"
                 role="main">
-            <div name="view1">Page 1</div>
-            <div name="view2">Page 2</div>
-            <div name="view3">Page 3</div>
-            <div name="view404">Page 404</div>
+            <my-view1 name="view1"></my-view1>
+            <my-view2 name="view2"></my-view2>
+            <my-view404 name="view404"></my-view404>
         </iron-pages>
     </template>
 
@@ -86,7 +85,7 @@
             _pageChanged(page) {
                 // Load page import on demand. Show 404 page if fails
                 var resolvedPageUrl = this.resolveUrl('my-' + page + '.html');
-               // this.importHref(resolvedPageUrl, null, this._showPage404, true);
+                Polymer.Utils.importHref(resolvedPageUrl, null, this._showPage404.bind(this), true);
             }
 
             _showPage404() {
