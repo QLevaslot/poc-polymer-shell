@@ -1,7 +1,7 @@
 {
-  "name": "polymer-starter-kit",
+  "name": "poc polymer shell",
   "authors": [
-    "The Polymer Authors"
+    "Quentin Levaslot"
   ],
   "private": true,
   "dependencies": {
