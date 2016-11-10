@@ -4,6 +4,7 @@
   "description": "Polymer progressive webapp",
   "main": "index.js",
   "scripts": {
+    "build": "gulp"
   },
   "keywords": [
     "polymer"
